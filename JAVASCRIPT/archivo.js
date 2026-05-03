@@ -1,39 +1,22 @@
-//menu para responsive
-const hamburguesa = document.querySelector(".hamburguesa");
-const menu = document.querySelector(".Menu");
+// Hamburguesa
+const hamburguesa = document.querySelector(".hamburguesa")
+const menu = document.querySelector(".Menu")
 
-hamburguesa.addEventListener("click", function () {
-  menu.classList.toggle("activo");
-});
-//mensaje por correo
-emailjs.init("2iA66LdavwzSa077Q");
+hamburguesa.addEventListener("click", function() {
+    menu.classList.toggle("activo")
+})
 
-const form = document.querySelector("form");
+// Animaciones
+const elementos = document.querySelectorAll(".animado")
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const nombre = document.getElementById("nombre").value;
-  const telefono = document.getElementById("numero").value;
-  const mensaje = document.getElementById("mensaje").value;
-
-  if (nombre === "" || telefono === "" || mensaje === "") {
-    alert("Por favor llena todos los campos");
-    return;
-  }
-
-  emailjs
-    .send("service_x8vup6w", "template_m92es0r", {
-      nombre: nombre,
-      telefono: telefono,
-      mensaje: mensaje,
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible")
+        }
     })
-    .then(function () {
-      alert("¡Mensaje enviado correctamente!");
-      form.reset();
-    })
-    .catch(function (error) {
-      alert("Error al enviar. Intenta de nuevo.");
-      console.log(error);
-    });
-});
+}, { threshold: 0.01 })
+
+elementos.forEach(function(elemento) {
+    observer.observe(elemento)
+})
