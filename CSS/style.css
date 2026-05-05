@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.redireccion{
+  text-decoration: none;
+  color: #111;
+  font-size: 25px;
+  font-weight: 800;
+}
 .encabezado {
   display: flex;
   justify-content: space-between;

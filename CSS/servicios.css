@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .redireccion{
+    text-decoration: none;
+    color: #111;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+  .Menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .Menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding: 3px 6px;
+  }
+  .Menu a:hover {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .comenzar {
+    border-radius: 3px;
+    background-color: #4338ca;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+  }
+  .comenzar:hover {
+    cursor: pointer;
+    background-color: aqua;
+  }
+  footer {
+    border-top: 1px solid #050505;
+    padding: 32px 48px;
+    text-align: center;
+    background-color: white;
+  }
+  footer p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  footer svg {
+    width: 24px 24px;
+    cursor: pointer;
+    margin: 0 8px;
+    color: #555;
+  }
+  footer svg:hover {
+    background-color: #4f46e5;
+  }
+  footer:hover {
+    background-color: aqua;
+  }
+  .hamburguesa {
+    border: none;
+    background-color: white;
+    display: none;
+    cursor: pointer;
+  }
+  .hamburguesa svg {
+    width: 28px;
+    height: 28px;
+  }
+  @media (max-width: 768px) {
+    .hamburguesa {
+      display: block;
+    }
+    #hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 48px 24px;
+    }
+    .hero-imagen img {
+      width: 100%;
+      margin-top: 32px;
+    }
+    .servicios {
+      flex-direction: column;
+      align-items: center;
+    }
+    .Menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      margin-top: 12px;
+    }
+    .Menu.activo {
+      display: flex;
+    }
+    .Menu a {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+    }
+    .comenzar {
+      width: 100%;
+      margin-top: 8px;
+      padding: 12px;
+    }
+    .encabezado {
+      flex-wrap: wrap;
+      padding: 16px 24px;
+    }
+  }
+  .animado {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

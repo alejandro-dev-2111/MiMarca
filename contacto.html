@@ -6,10 +6,11 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="/css/contacto.css" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="icon" type="image/png" href="IMAGES/icons8-herramienta-32.png">
   </head>
   <body>
     <header class="encabezado">
-      <h1>MiMarca</h1>
+      <a class="redireccion" href="index.html">MiMarca</a>
       <button class="hamburguesa">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,12 +32,12 @@
       <nav class="Menu">
         <a href="index.html">Inicio</a>
         <a href="#">Nosotros</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
         <button class="comenzar">Comenzar</button>
       </nav>
     </header>
-    <section id="wsp">
+    <section id="wsp" class="animado">
       <div class="numero">
         <p>Es fácil, ¡haz click aquí abajo y escríbenos!</p>
         <button class="btn-contacto">
@@ -108,7 +109,7 @@
         </button>
       </div>
     </section>
-    <section id="formulario">
+    <section id="formulario" class="animado">
       <p>Ó bien déjanos un mensaje</p>
       <form action="">
         <label for="nombre" class="nombre">Nombre y apellido</label>
@@ -137,7 +138,7 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
-    <footer>
+    <footer class="animado">
       <p>© MiMarca. Todos los derechos reservados.</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
