@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevWeb</title>
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="icon" type="image/png" href="IMAGES/icons8-desarrollo-backend-48.apng.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="IMAGES/icons8-desarrollo-backend-48.apng.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="encabezado">
@@ -32,14 +42,17 @@
           />
         </svg>
       </button>
-      <nav class="Menu">
-        <a href="index.html">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contacto.html">Contacto</a>
+      <div class="menu-grupo">
+        <nav class="Menu">
+          <a href="index.html">Inicio</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="#Mis-Servicios">Servicios</a>
+          <a href="#proycs">Proyectos</a>
+        </nav>
         <a
           href="https://wa.me/50246387629?text=Hola%20me%20interesa%20tu%20servicio"
-          target="_blank" class="btn-wsp"
+          target="_blank"
+          class="btn-wsp"
         >
           <button class="comenzar">
             Hablemos
@@ -68,130 +81,611 @@
             </svg>
           </button>
         </a>
-      </nav>
+      </div>
     </header>
-    <section id="hero" class="animado">
-      <div class="hero-text">
-        <h2>Soluciones simples para tu negocio</h2>
-        <p>Te ayudamos a crecer</p>
-        <button class="comenzar-ahora">Comenzar ahora</button>
+    <section id="hero">
+      <div class="badge">
+        <span class="punto"></span>
+        Desarrollo web a tu medida
       </div>
-      <div class="hero-imagen">
-        <img src="/IMAGES/patrick-tomasso-nWvWBV0sv04-unsplash.jpg" />
+      <div class="texto-hero">
+        <h2>
+          Creo páginas web
+          <br />
+          modernas que hacen
+          <br />
+          <span>crecer a tu negocio</span>
+        </h2>
+        <p>
+          Diseño y desarrollo de páginas web rápidos, responsivos
+          <br />
+          y optimizados para lograr los mejores resultados.
+        </p>
       </div>
-    </section>
-    <section id="servicios" class="animado">
-      <h2>¡Lo mejor para tu negocio!</h2>
-      <div class="servicios">
+      <div class="boton-del-hero">
+        <a
+          href="https://wa.me/50246387629?text=Hola%20me%20interesa%20tu%20servicio"
+          target="_blank"
+          class="btn-wsp"
+        >
+          <button class="comenzar">
+            Hablemos por WhatsApp
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <title xmlns="">whatsapp-fill</title>
+              <g fill="none">
+                <g clip-path="url(#SVGXv8lpc2Y)">
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413"
+                    clip-rule="evenodd"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="SVGXv8lpc2Y">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </g>
+            </svg>
+          </button>
+        </a>
+      </div>
+      <div class="iconos">
         <div class="tarjeta">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 128 128"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-rocket-icon lucide-rocket"
           >
-            <title xmlns="">starship</title>
-            <defs>
-              <mask id="SVGcVHSkeyt" maskUnits="userSpaceOnUse">
-                <circle cx="64" cy="64" r="63.9" fill="#c4c4c4" />
-              </mask>
-            </defs>
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
             <path
-              fill="currentColor"
-              d="M-22.2-14v155.9h172.4V-14zm57.4 38.5c.8 6.4 4.2 10.1 10.8 10.8q-10.95 1.65-10.8 10.8c-1.1-5.9-4.6-9.6-10.8-10.8c6.7-.8 10-4.6 10.8-10.8M81 29.6c8.7 10.6 12.5 20 6.6 33.3c4.9 5.3 7 13.8 6.9 21.8l-15-3.5l-.1.1l-2.4 6.3l-19.4-5.7l2-6.8l-14.8-5.9c4.7-5.8 9.4-8.6 16.8-12.2c-.7-11.3 8.5-19.4 19.4-27.4m-3.8 16.1c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6s5.6-2.5 5.6-5.6s-2.5-5.6-5.6-5.6M54.9 95.2l17.184 5.595l.016-.096v.102l-.016-.006c-.31 1.714-5.034 26.24-22.885 32.705L20.1 115c25.6 0 34.8-19.8 34.8-19.8"
-              mask="url(#SVGcVHSkeyt)"
+              d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
             />
+            <path
+              d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+            />
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
           </svg>
-          <h3>Rápido</h3>
-          <p>Soluciones rápidas para que ahorres tiempo y recursos</p>
+          <div>
+            <h2>Rápido</h2>
+            <p>
+              Entrega ágil y
+              <br />
+              cumplimiento
+            </p>
+          </div>
         </div>
         <div class="tarjeta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-icon lucide-shield"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+          </svg>
+          <div>
+            <h2>Seguro</h2>
+            <p>
+              Implemento buenas
+              <br />
+              practicas
+            </p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chart-bar-decreasing-icon lucide-chart-bar-decreasing"
+          >
+            <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+            <path d="M7 11h8" />
+            <path d="M7 16h3" />
+            <path d="M7 6h12" />
+          </svg>
+          <div>
+            <h2>Optimizado</h2>
+            <p>
+              SEO y rendimiento
+              <br />
+              para mejores resultados
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="imagen-del-hero">
+        <img
+          src="IMAGES/ChatGPT Image 6 may 2026, 02_45_11 p.m..png"
+          alt="paginas web"
+          width="300px"
+        />
+      </div>
+    </section>
+    <section id="presentacion">
+      <div class="texto-presentacion">
+        <h2>¿Por qué trabajar conmigo?</h2>
+        <p>
+          Me enfoco en ofrecer soluciones de calidad que impulsen tu presencia
+          en internet.
+        </p>
+      </div>
+      <div class="cartas-presentacion">
+        <div class="carta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-zap-icon lucide-zap"
+          >
+            <path
+              d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+            />
+          </svg>
+          <h2>Entrega rápida</h2>
+          <p>Cumplo con los tiempos acordados sin comprometer la calidad.</p>
+        </div>
+        <div class="carta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-icon lucide-shield"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+          </svg>
+          <h2>Sitios seguros</h2>
+          <p>
+            Implemento las mejores prácticas de seguridad para proteger tu
+            sitio.
+          </p>
+        </div>
+        <div class="carta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-smartphone-icon lucide-smartphone"
+          >
+            <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+            <path d="M12 18h.01" />
+          </svg>
+          <h2>100% Responsivo</h2>
+          <p>
+            Tu web se verá perfecta en cualquier dispositivo: Móvil, tablet o
+            escritorio.
+          </p>
+        </div>
+        <div class="carta">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-headset-icon lucide-headset"
+          >
+            <path
+              d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+            />
+            <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+          </svg>
+          <h2>Soporte continuo</h2>
+          <p>
+            Estoy disponible para ayudarte cuando lo necesites. Incluso después
+            del lanzamiento.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Mis-Servicios">
+      <div class="texto-servicios">
+        <h2>Mis servicios</h2>
+        <p>Soluciones web personalizadas para cada necesidad.</p>
+      </div>
+      <div class="servicios">
+        <div class="servicio">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-monitor-play-icon lucide-monitor-play"
+          >
+            <path
+              d="M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z"
+            />
+            <path d="M12 17v4" />
+            <path d="M8 21h8" />
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+          </svg>
+          <h2>Páginas web</h2>
+          <p>
+            Diseño y desarrollo páginas web profesionales, rápidas y totalmente
+            responsivas
+          </p>
+          <ul>
+            <li>Sitios corporativos</li>
+            <li>Landing pages</li>
+            <li>Páginas informativas</li>
+          </ul>
+        </div>
+        <div class="servicio">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+          <h2>Catalogo digital</h2>
+          <p>
+            Muestra tus productos con fotos, descripciones y precios para que
+            tus clientes sepan qué ofreces.
+          </p>
+          <ul>
+            <li>Restaurantes</li>
+            <li>Mercaderia de cualquier tipo</li>
+            <li>Servicios</li>
+          </ul>
+        </div>
+        <div class="servicio">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-brush-icon lucide-brush"
+          >
+            <path d="m11 10 3 3" />
+            <path
+              d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z"
+            />
+            <path
+              d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031"
+            />
+          </svg>
+          <h2>Rediseño web</h2>
+          <p>
+            Renuevo tu sitio actual para mejorar su imagen, velocidad y
+            experiencia de usuario
+          </p>
+          <ul>
+            <li>Diseño moderno</li>
+            <li>Mejor rendimiento</li>
+            <li>Optimización SEO</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="proycs">
+      <div class="texto-proyecto">
+        <h2>¿Qué tipo de pagina necesitas?</h2>
+        <p>Estos son algunos ejemplos del tipo de proyectos que desarrollo</p>
+        <p>
+          ¿Tienes algo en mente?
+          <a
+            href="https://wa.me/50246387629?text=Hola%20me%20interesa%20tu%20servicio"
+            target="_blank"
+            ><span style="color: rgb(70, 109, 250)">Hablemos</span></a
+          >
+        </p>
+      </div>
+
+      <div class="proyectos">
+        <div class="proyecto">
+          <img
+            src="IMAGES/pexels-burakeroglu3-31089991.jpg"
+            alt="restaurante"
+            width="300px"
+          />
+          <p>Restaurantes</p>
+        </div>
+        <div class="proyecto">
+          <img
+            src="IMAGES/pexels-joaquin-carfagna-3131171-16901228.jpg"
+            alt="hotel"
+            width="300px"
+          />
+          <p>Hoteles</p>
+        </div>
+        <div class="proyecto">
+          <img
+            src="IMAGES/pexels-gb-the-green-brand-1259697174-30824499.jpg"
+            alt="tienda"
+            width="300px"
+          />
+          <p>Tiendas</p>
+        </div>
+      </div>
+    </section>
+    <section id="cta">
+      <div class="icono-del-cta">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-send-icon lucide-send"
+        >
+          <path
+            d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+          />
+          <path d="m21.854 2.147-10.94 10.939" />
+        </svg>
+      </div>
+      <div class="texto-cta">
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Hablemos y hagamos realidad tu página web.</p>
+      </div>
+      <div class="boton-del-cta">
+        <a
+          href="https://wa.me/50246387629?text=Hola%20me%20interesa%20tu%20servicio"
+          target="_blank"
+          class="btn-wsp"
+        >
+          <button class="comenzar">
+            Hablemos por WhatsApp
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <title xmlns="">whatsapp-fill</title>
+              <g fill="none">
+                <g clip-path="url(#SVGXv8lpc2Y)">
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413"
+                    clip-rule="evenodd"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="SVGXv8lpc2Y">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </g>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="img-del-footer">
+        <img src="IMAGES/icons8-desarrollo-backend-48.apng.png" alt="" />
+        <a class="redireccion" href="index.html">DevWeb</a>
+      </div>
+      <div class="texto-footer">
+        <p>
+          Desarrollo web profesional para hacer crecer tu negocio en internet
+        </p>
+      </div>
+      <div class="contenido-footer">
+        <h2>Navegación</h2>
+        <nav>
+          <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#Mis-Servicios">Servicios</a></li>
+            <li><a href="#proycs">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contenido-footer">
+        <h2>Servicios</h2>
+        <ul>
+          <li>Páginas Web</li>
+          <li>Catalogo Online</li>
+          <li>Rediseño Web</li>
+          <li>Landing Pages</li>
+        </ul>
+      </div>
+      <div class="contenido-footer">
+        <h2>Contacto</h2>
+        <ul>
+          <li>
+            <div class="contacto-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-phone-icon lucide-phone"
+              >
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                />
+              </svg>
+              <p>+502 46387629</p>
+            </div>
+          </li>
+          <li>
+            <div class="contacto-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
+              <p>personalalejandro2111@gmail.com</p>
+            </div>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin-icon lucide-map-pin"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <p>Guatemala</p>
+          </li>
+        </ul>
+      </div>
+      <div class="iconos-del-footer">
+        <a href="https://www.facebook.com/sebastian.vasquez.9803/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
           >
-            <title xmlns="">outline-shield</title>
+            <title xmlns="">facebook</title>
             <path
               fill="currentColor"
-              d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91c4.59-1.15 8-5.86 8-10.91V5zm6 9.09c0 4-2.55 7.7-6 8.83c-3.45-1.13-6-4.82-6-8.83v-4.7l6-2.25l6 2.25z"
+              d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
             />
           </svg>
-          <h3>Seguro</h3>
-          <p>protegemos tu informacion con los mas altos estándares</p>
-        </div>
-        <div class="tarjeta">
+        </a>
+        <a href="https://www.instagram.com/sebastian_a.v14/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"
-            viewBox="0 0 8 8"
+            viewBox="0 0 24 24"
           >
-            <title xmlns="">bars</title>
-            <path fill="currentColor" d="M6 8V0h2v8M3 8V5h2v3M0 8V3h2v5" />
-          </svg>
-          <h3>Eficiente</h3>
-          <p>Optimizamos procesos para obtener mejores resultados</p>
-        </div>
-      </div>
-    </section>
-    <section id="cta" class="cta animado">
-      <h2>¿Listo para comenzar?</h2>
-      <p>Únete hoy y lleva tu negocio al siguiente nivel.</p>
-      <button class="comenzar-ahora">Comenzar ahora</button>
-    </section>
-    <footer class="animado">
-      <p>© MiMarca. Todos los derechos reservados.</p>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
-        viewBox="0 0 24 24"
-      >
-        <title xmlns="">facebook</title>
-        <path
-          fill="currentColor"
-          d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
-        viewBox="0 0 24 24"
-      >
-        <title xmlns="">instagram-fill</title>
-        <path
-          fill="currentColor"
-          fill-rule="evenodd"
-          d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
-          clip-rule="evenodd"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
-        viewBox="0 0 24 24"
-      >
-        <title xmlns="">whatsapp-fill</title>
-        <g fill="none">
-          <g clip-path="url(#SVGXv8lpc2Y)">
+            <title xmlns="">instagram-fill</title>
             <path
               fill="currentColor"
               fill-rule="evenodd"
-              d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413"
+              d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
               clip-rule="evenodd"
             />
-          </g>
-          <defs>
-            <clipPath id="SVGXv8lpc2Y">
-              <path fill="#fff" d="M0 0h24v24H0z" />
-            </clipPath>
-          </defs>
-        </g>
-      </svg>
+          </svg>
+        </a>
+        <a
+          href="https://wa.me/50246387629?text=Hola%20me%20interesa%20tu%20servicio"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <title xmlns="">whatsapp-fill</title>
+            <g fill="none">
+              <g clip-path="url(#SVGXv8lpc2Y)">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413"
+                  clip-rule="evenodd"
+                />
+              </g>
+              <defs>
+                <clipPath id="SVGXv8lpc2Y">
+                  <path fill="#fff" d="M0 0h24v24H0z" />
+                </clipPath>
+              </defs>
+            </g>
+          </svg>
+        </a>
+      </div>
     </footer>
     <script src="JAVASCRIPT/archivo.js"></script>
   </body>
