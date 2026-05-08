@@ -7,6 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+/*fin general*/
 /*encabezado*/
 .encabezado {
   display: flex;
@@ -16,50 +17,89 @@ body {
   background-color: black;
   border-bottom: 1px solid #222;
 }
-
+@media (max-width: 768px) {
+  .hamburguesa {
+    display: block;
+  }
+  .encabezado {
+    flex-wrap: wrap;
+    padding: 16px 24px;
+  }
+  .menu-grupo {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .menu-grupo.activo {
+    display: flex;
+  }
+  .Menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .Menu a {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    width: 100%;
+  }
+  .comenzar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
+.boton-del-cta a {
+  text-decoration: none;
+}
+.hamburguesa {
+  display: none;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+.hamburguesa svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
 .imagen-del-encabezado {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .imagen-del-encabezado img {
   height: 40px;
   mix-blend-mode: screen;
 }
-
 .redireccion {
   text-decoration: none;
   color: white;
   font-size: 25px;
   font-weight: 800;
 }
-
 .menu-grupo {
   display: flex;
   align-items: center;
   gap: 42px;
 }
-
 .Menu {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-
 .Menu a {
   text-decoration: none;
   color: white;
   font-size: 15px;
   font-weight: 600;
 }
-
 .Menu a:hover {
   color: #6658ff;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-
 .comenzar {
   display: flex;
   align-items: center;
@@ -72,14 +112,15 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform-origin: left;
 }
-
 .encabezado a {
   text-decoration: none;
 }
-
 .comenzar:hover {
   background-color: #3730a3;
+  transform: scale(1.05);
 }
 /*fin encabezado
 /*hero*/
@@ -144,7 +185,7 @@ body {
 .boton-del-hero a {
   text-decoration: none;
 }
-.boton-del-hero:hover{
+.boton-del-hero:hover {
   transform: scale(1.05);
 }
 .tarjeta {
@@ -195,57 +236,66 @@ body {
 }
 /* fin del hero*/
 
-.boton-del-cta a {
-  text-decoration: none;
+/*Presentacion*/
+#presentacion{
+  padding: 20px;
+  position: relative;
+  background-color: rgb(15, 15, 20);
 }
-
-.hamburguesa {
-  display: none;
-  border: none;
-  background-color: black;
-  cursor: pointer;
-}
-
-.hamburguesa svg {
-  width: 28px;
-  height: 28px;
+.texto-presentacion{
   color: white;
+  text-align: center;
 }
-
-@media (max-width: 768px) {
-  .hamburguesa {
-    display: block;
-  }
-  .encabezado {
-    flex-wrap: wrap;
-    padding: 16px 24px;
-  }
-  .menu-grupo {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 12px;
-  }
-  .menu-grupo.activo {
-    display: flex;
-  }
-  .Menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-  .Menu a {
-    padding: 12px 0;
-    border-bottom: 1px solid #222;
-    width: 100%;
-  }
-  .comenzar {
-    width: 100%;
-    justify-content: center;
-    margin-top: 8px;
-  }
+.texto-presentacion h2{
+  font-size: 35px;
 }
-
+.texto-presentacion p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+.cartas-presentacion{
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.carta{
+  flex-direction: row;
+  display: flex;
+  gap: 15px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  background-color:#1a1a2e;
+  transition: box-shadow 0.3s ease;
+}
+.carta-texto{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.carta:hover{
+  box-shadow: 10px 10px 20px rgba(0, 14, 144, 0.5);
+}
+.carta svg{
+  color: #4338ca;
+  width: 50px;
+  margin-top: 14px;
+  height: 50px;
+}
+.carta h2{
+  color: white;
+  font-size: 15px;
+}
+.carta p{
+  color: white;
+  font-size: 13px;
+}
+/*fin presentacion*/
+/*footer*/
 footer {
   background: linear-gradient(to bottom, #151525, #000000);
 }
+/*fin del footer*/
