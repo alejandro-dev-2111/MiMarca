@@ -188,6 +188,18 @@ body {
 .boton-del-hero:hover {
   transform: scale(1.05);
 }
+.boton-de-proyecto a{
+  text-decoration: none;
+}
+.btn-proyc{
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  color: white;
+  border:1px solid #555;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
 .tarjeta {
   display: flex;
   gap: 15px;
@@ -237,23 +249,23 @@ body {
 /* fin del hero*/
 
 /*Presentacion*/
-#presentacion{
+#presentacion {
   padding: 20px;
   position: relative;
   background-color: rgb(15, 15, 20);
 }
-.texto-presentacion{
+.texto-presentacion {
   color: white;
   text-align: center;
 }
-.texto-presentacion h2{
+.texto-presentacion h2 {
   font-size: 35px;
 }
-.texto-presentacion p{
+.texto-presentacion p {
   margin-top: 10px;
   font-size: 15px;
 }
-.cartas-presentacion{
+.cartas-presentacion {
   margin-top: 15px;
   align-items: center;
   justify-content: center;
@@ -262,38 +274,126 @@ body {
   position: relative;
   margin-bottom: 10px;
 }
-.carta{
+.carta {
   flex-direction: row;
   display: flex;
   gap: 15px;
   padding: 10px 30px;
   border-radius: 8px;
-  background-color:#1a1a2e;
+  background-color: #1a1a2e;
   transition: box-shadow 0.3s ease;
 }
-.carta-texto{
+.carta-texto {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.carta:hover{
+.carta:hover {
   box-shadow: 10px 10px 20px rgba(0, 14, 144, 0.5);
 }
-.carta svg{
+.carta svg {
   color: #4338ca;
   width: 50px;
   margin-top: 14px;
   height: 50px;
 }
-.carta h2{
+.carta h2 {
   color: white;
   font-size: 15px;
 }
-.carta p{
+.carta p {
   color: white;
   font-size: 13px;
 }
 /*fin presentacion*/
+/*servicios*/
+#Mis-Servicios {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+}
+.texto-servicios {
+  text-align: center;
+}
+.texto-servicios h2 {
+  font-size: 35px;
+}
+.texto-servicios p {
+  font-size: 15px;
+}
+.servicios {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 48px;
+}
+.servicio {
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+  border: 1px solid rgb(194, 192, 192);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+}
+.icono-servicio{
+  background-color: rgba(67, 56, 202, 0.1);
+  color: #4338ca;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 12px;
+}
+.lucide-shopping-cart-icon{
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  border-radius: 50%;
+  color: green;
+  background-color: rgb(222, 255, 222);
+}
+.servicio h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.servicio p {
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 0;
+}
+.listas {
+  margin-top: 20px;
+  list-style: none;
+  align-items: center;
+}
+.listas li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #555;
+  gap: 8px;
+}
+.listas li::before {
+  content: "✓ ";  
+  color: black;   
+  font-weight: 700;
+  background-color: rgba(67, 56, 202, 0.1);
+  border-radius: 50%;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: 12px;
+  margin-left: 30px;
+}
 /*footer*/
 footer {
   background: linear-gradient(to bottom, #151525, #000000);
