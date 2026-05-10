@@ -175,10 +175,16 @@ body {
   z-index: 1;
   position: relative;
 }
-.boton-del-hero {
-  position: relative;
+.botones-hero {
+  display: flex;
+  gap: 25px;
+  align-items: center;
   margin-left: 75px;
   margin-top: 13px;
+}
+.boton-del-hero {
+  margin: 0;
+  position: relative;
   transition: transform 0.3s ease;
   transform-origin: left;
 }
@@ -188,17 +194,32 @@ body {
 .boton-del-hero:hover {
   transform: scale(1.05);
 }
-.boton-de-proyecto a{
+.boton-de-proyecto a {
   text-decoration: none;
 }
-.btn-proyc{
+.btn-proyc {
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: transform 0.3s ease;
+  transform-origin: left;
+  justify-content: center;
   background-color: transparent;
   display: flex;
   position: relative;
   color: white;
-  border:1px solid #555;
-  border-radius: 5px;
-  padding: 20px 20px;
+  border: 1px solid #555;
+}
+.btn-proyc svg {
+  display: flex;
+  margin-left: 8px;
+}
+.btn-proyc:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .tarjeta {
   display: flex;
@@ -337,9 +358,9 @@ body {
   border-radius: 5px;
   width: 100%;
   max-width: 350px;
-  height: 300px;
+  height: 325px;
 }
-.icono-servicio{
+.icono-servicio {
   background-color: rgba(67, 56, 202, 0.1);
   color: #4338ca;
   width: 60px;
@@ -347,7 +368,7 @@ body {
   border-radius: 50%;
   padding: 12px;
 }
-.lucide-shopping-cart-icon{
+.lucide-shopping-cart-icon {
   width: 60px;
   height: 60px;
   padding: 12px;
@@ -370,7 +391,7 @@ body {
   list-style: none;
   align-items: center;
 }
-.listas li{
+.listas li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -380,8 +401,8 @@ body {
   gap: 8px;
 }
 .listas li::before {
-  content: "✓ ";  
-  color: black;   
+  content: "✓ ";
+  color: black;
   font-weight: 700;
   background-color: rgba(67, 56, 202, 0.1);
   border-radius: 50%;
@@ -394,6 +415,63 @@ body {
   display: 12px;
   margin-left: 30px;
 }
+/*proycs*/
+#proycs {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+}
+.texto-proyecto{
+  text-align: center;
+}
+.texto-proyecto h2{
+  font-size: 35px;
+}
+.texto-proyecto p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+.texto-proyecto a{
+  text-decoration: none;
+  color:#6658ff ;
+}
+.proyectos{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 25px;
+}
+.proyecto{
+  border-radius: 8px;
+  border: 1px solid rgb(194, 192, 192);
+  overflow: hidden;      /* ← para que la imagen respete el border-radius */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.proyecto p{
+  margin: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.proyecto img{
+  width: 280px;
+  height: 180px;
+  object-fit: cover;    /* recorta sin deformar */
+  border-radius: 5px 5px 0 0;  /* solo esquinas de arriba */
+  display: block;
+}
+.proyecto:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tienda{
+  height: 200px;
+}
+/*fin proycs*/
 /*footer*/
 footer {
   background: linear-gradient(to bottom, #151525, #000000);
