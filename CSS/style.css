@@ -421,57 +421,127 @@ body {
   background-color: white;
   padding: 20px;
 }
-.texto-proyecto{
+.texto-proyecto {
   text-align: center;
 }
-.texto-proyecto h2{
+.texto-proyecto h2 {
   font-size: 35px;
 }
-.texto-proyecto p{
+.texto-proyecto p {
   margin-top: 10px;
   font-size: 15px;
 }
-.texto-proyecto a{
+.texto-proyecto a {
   text-decoration: none;
-  color:#6658ff ;
+  color: #6658ff;
 }
-.proyectos{
+.proyectos {
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 45px;
   margin-top: 25px;
 }
-.proyecto{
+.proyecto {
+  position: relative;
   border-radius: 8px;
   border: 1px solid rgb(194, 192, 192);
-  overflow: hidden;      /* ← para que la imagen respete el border-radius */
-  transition: box-shadow 0.3s ease;
+  overflow: hidden;
   cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1;
 }
-.proyecto p{
+.proyecto:hover {
+  transform: scale(5);  /* ← crece 3 veces su tamaño */
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.4s ease;
+  z-index: 1;
+}
+
+/* Al hacer hover se oscurece */
+.proyecto:hover .overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* Oscurece todo lo demás al hacer hover */
+#proycs:has(.proyecto:hover) .proyecto:not(:hover) {
+  filter: brightness(0.4);  /* oscurece las otras tarjetas */
+  transition: filter 0.4s ease;
+}
+.proyecto p {
   margin: 8px 12px;
   text-align: left;
   font-size: 14px;
   font-weight: 600;
   color: #333;
 }
-.proyecto img{
+.proyecto img {
   width: 280px;
   height: 180px;
-  object-fit: cover;    /* recorta sin deformar */
-  border-radius: 5px 5px 0 0;  /* solo esquinas de arriba */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 5px 5px 0 0; /* solo esquinas de arriba */
   display: block;
 }
 .proyecto:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transform: translateY(-4px);
+  transform: translateY(-10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.tienda{
+.tienda {
   height: 200px;
 }
 /*fin proycs*/
+/*cta*/
+#cta {
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 40px 48px;
+  background-color: white;
+}
+.icono-del-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #4338ca;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(67, 56, 202, 0.5);
+}
+.icono-del-cta svg {
+  color: white;
+  width: 28px;
+  height: 28px;
+}
+.cta {
+  width: 75%;
+  margin: 0 auto; /* ← centra el div */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* icono izq, texto centro, botón der */
+  gap: 32px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #3d3d80, #000000);
+  padding: 40px 48px;
+}
+.texto-cta {
+}
+.texto-cta h2 {
+  color: white;
+}
+.texto-cta p {
+  color: white;
+}
+/*fin cta*/
 /*footer*/
 footer {
   background: linear-gradient(to bottom, #151525, #000000);
