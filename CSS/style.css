@@ -17,39 +17,7 @@ body {
   background-color: black;
   border-bottom: 1px solid #222;
 }
-@media (max-width: 768px) {
-  .hamburguesa {
-    display: block;
-  }
-  .encabezado {
-    flex-wrap: wrap;
-    padding: 16px 24px;
-  }
-  .menu-grupo {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 12px;
-  }
-  .menu-grupo.activo {
-    display: flex;
-  }
-  .Menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-  }
-  .Menu a {
-    padding: 12px 0;
-    border-bottom: 1px solid #222;
-    width: 100%;
-  }
-  .comenzar {
-    width: 100%;
-    justify-content: center;
-    margin-top: 8px;
-  }
-}
+
 .boton-del-cta a {
   text-decoration: none;
 }
@@ -111,8 +79,7 @@ body {
   border-radius: 6px;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   transform-origin: left;
 }
 .encabezado a {
@@ -412,7 +379,7 @@ body {
   width: 20px;
   height: 20px;
   font-size: 12px;
-  display: 12px;
+  display: flex;
   margin-left: 30px;
 }
 /*proycs*/
@@ -451,11 +418,6 @@ body {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   z-index: 1;
 }
-.proyecto:hover {
-  transform: scale(5); /* ← crece 3 veces su tamaño */
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  z-index: 100;
-}
 .overlay {
   position: absolute;
   top: 0;
@@ -465,6 +427,12 @@ body {
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.4s ease;
   z-index: 1;
+}
+.proyecto:hover {
+  transform: scale(2.5);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* Al hacer hover se oscurece */
@@ -489,11 +457,6 @@ body {
   object-fit: cover; /* recorta sin deformar */
   border-radius: 5px 5px 0 0; /* solo esquinas de arriba */
   display: block;
-}
-.proyecto:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transform: translateY(-10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .tienda {
   height: 200px;
@@ -669,7 +632,154 @@ footer {
   color: #555;
   font-size: 13px;
 }
-footer p{
-  color: white;
-}
 /*fin del footer*/
+.animado {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animado.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 900px) {
+  .hamburguesa {
+    display: block;
+  }
+  .encabezado {
+    flex-wrap: wrap;
+    padding: 16px 24px;
+  }
+  .menu-grupo {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .menu-grupo.activo {
+    display: flex;
+  }
+  .Menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .Menu a {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    width: 100%;
+  }
+  .comenzar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  /* Header — ya lo tienes */
+  .hamburguesa {
+    display: block;
+  }
+  .menu-grupo {
+    display: none;
+  }
+  .menu-grupo.activo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .Menu a {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    width: 100%;
+  }
+  .comenzar {
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  .encabezado {
+    flex-wrap: wrap;
+    padding: 16px 24px;
+  }
+
+  /* Hero */
+  #hero {
+    padding: 40px 24px;
+  }
+  .badge {
+    margin-left: 0;
+  }
+  .texto-hero {
+    margin-left: 0;
+  }
+  .texto-hero h2 {
+    font-size: 32px;
+  }
+  .botones-hero {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .iconos {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .imagen-del-hero {
+    display: none;
+  } /* oculta la imagen en celular */
+
+  /* Presentación */
+  .cartas-presentacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carta {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Servicios */
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+  }
+  .servicio {
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* quita el height fijo */
+  }
+
+  /* Proyectos */
+  .proyectos {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .proyecto img {
+    width: 100%;
+  }
+
+  /* CTA */
+  .cta {
+    width: 95%;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  /* Footer */
+  .footer-contenido {
+    flex-direction: column;
+    gap: 32px;
+  }
+  footer {
+    padding: 40px 24px;
+  }
+}
