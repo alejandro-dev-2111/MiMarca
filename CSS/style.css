@@ -452,7 +452,7 @@ body {
   z-index: 1;
 }
 .proyecto:hover {
-  transform: scale(5);  /* ← crece 3 veces su tamaño */
+  transform: scale(5); /* ← crece 3 veces su tamaño */
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   z-index: 100;
 }
@@ -473,7 +473,7 @@ body {
 }
 /* Oscurece todo lo demás al hacer hover */
 #proycs:has(.proyecto:hover) .proyecto:not(:hover) {
-  filter: brightness(0.4);  /* oscurece las otras tarjetas */
+  filter: brightness(0.4); /* oscurece las otras tarjetas */
   transition: filter 0.4s ease;
 }
 .proyecto p {
@@ -533,8 +533,6 @@ body {
   background: linear-gradient(to bottom, #3d3d80, #000000);
   padding: 40px 48px;
 }
-.texto-cta {
-}
 .texto-cta h2 {
   color: white;
 }
@@ -544,6 +542,134 @@ body {
 /*fin cta*/
 /*footer*/
 footer {
+  position: relative;
+  padding: 60px 75px;
   background: linear-gradient(to bottom, #151525, #000000);
+}
+
+/* Fila principal del footer — 4 columnas */
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 175px;
+  margin-bottom: 40px;
+}
+
+/* Columna del logo */
+.img-del-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 200px;
+}
+
+.img-del-footer img {
+  width: 40px;
+  height: 40px;
+  mix-blend-mode: screen;
+}
+
+.texto-footer p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* Columnas de navegación, servicios y contacto */
+.contenido-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contenido-footer h2 {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contenido-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contenido-footer li {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.contenido-footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contenido-footer a:hover {
+  color: #6658ff;
+}
+
+/* Items de contacto con icono */
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacto-item svg {
+  width: 16px;
+  height: 16px;
+  color: #6658ff;
+  flex-shrink: 0;
+}
+
+.contacto-item p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Iconos de redes sociales */
+.iconos-del-footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.iconos-del-footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #1a1a2e;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.iconos-del-footer a:hover {
+  background-color: #6658ff;
+}
+
+.iconos-del-footer svg {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #555;
+  font-size: 13px;
+}
+footer p{
+  color: white;
 }
 /*fin del footer*/

@@ -1,6 +1,6 @@
 // Hamburguesa
 const hamburguesa = document.querySelector(".hamburguesa")
-const menu = document.querySelector(".Menu")
+const menu = document.querySelector(".menu-grupo")
 
 hamburguesa.addEventListener("click", function() {
     menu.classList.toggle("activo")
