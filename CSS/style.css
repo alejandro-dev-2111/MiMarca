@@ -646,6 +646,7 @@ footer {
 @media (max-width: 900px) {
   .hamburguesa {
     display: block;
+    background-color: black;
   }
   .encabezado {
     flex-wrap: wrap;
@@ -656,6 +657,7 @@ footer {
     flex-direction: column;
     width: 100%;
     margin-top: 12px;
+    gap: 0;
   }
   .menu-grupo.activo {
     display: flex;
@@ -669,6 +671,7 @@ footer {
     padding: 12px 0;
     border-bottom: 1px solid #222;
     width: 100%;
+    color: white;
   }
   .comenzar {
     width: 100%;
@@ -753,7 +756,7 @@ footer {
   .servicio {
     width: 100%;
     max-width: 400px;
-    height: auto; /* quita el height fijo */
+    height: auto;
   }
 
   /* Proyectos */
