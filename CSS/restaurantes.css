@@ -1,0 +1,147 @@
+/*general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*fin general*/
+/*header*/
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: none;
+  z-index: 100;
+}
+.logo {
+  margin-left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo h1 {
+  font-size: 30px;
+  color: white;
+}
+.logo svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  margin-right: 28px;
+}
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+/*fin header*/
+/*hero*/
+#hero {
+  background-image: url("../IMAGES/pexels-burakeroglu3-31089991.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  z-index: 0;
+}
+.texto-hero {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  color: white;
+  max-width: 700px;
+  padding: 0 24px;
+  margin-left: 40px;
+  margin-top: 75px;
+}
+.texto-hero h2 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+span {
+  color: rgb(170, 170, 0);
+}
+.texto-hero p {
+  font-size: 30px;
+  font-weight: 300;
+}
+hr {
+  width: 20%;
+  height: 4px;
+  background-color: rgb(170, 170, 0);
+  border-color: rgb(170, 170, 0);
+}
+.btns-hero {
+  display: flex;
+  margin-left: 60px;
+  gap: 16px;
+  z-index: 1;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(170, 170, 0);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.btn-1 svg {
+  color: white;
+  margin-right: 8px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+button svg {
+  color: white;
+  height: 30px;
+}
+.btn-2 {
+  background-color: transparent;
+  border: 1px solid white;
+}
+/*fin hero*/
