@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 /*fin general*/
 /*header*/
@@ -94,18 +95,19 @@ nav a:hover {
   line-height: 1.2;
   margin-bottom: 16px;
 }
-span {
+.texto-hero span {
   color: rgb(170, 170, 0);
 }
 .texto-hero p {
   font-size: 30px;
   font-weight: 300;
 }
-hr {
+.hr-hero {
   width: 20%;
   height: 4px;
   background-color: rgb(170, 170, 0);
-  border-color: rgb(170, 170, 0);
+  border: none;
+  margin: 16px 0;
 }
 .btns-hero {
   display: flex;
@@ -118,7 +120,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   height: 50px;
   border-radius: 5px;
   border: none;
@@ -290,3 +292,94 @@ footer p {
   text-align: center;
 }
 /*fin footer*/
+/*responsive*/
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo h1 {
+    font-size: 23px;
+  }
+  .platillos {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 24px;
+    gap: 1px;
+  }
+  .logo {
+    text-align: center;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    padding-top: 225px;
+  }
+  .texto-hero {
+    margin-left: 0;
+    margin-top: 0px;
+    text-align: left;
+    padding: 0 24px;
+  }
+  .texto-menu {
+    text-align: center;
+    display: flex;
+  }
+  .linea {
+    flex: 1;
+    height: 2px;
+    background-color: rgb(170, 170, 0);
+  }
+  .btns-hero {
+    margin-left: 0;
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 0 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .texto-menu h2 {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .elementos-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #cta {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .texto-cta {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .btn-cta {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .img-cta {
+    width: 100%;
+  }
+}
+/*fin responsive*/
