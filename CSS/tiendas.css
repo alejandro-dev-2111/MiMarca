@@ -1,0 +1,243 @@
+/*general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/*fin general*/
+/*barra de anuncion*/
+.barra-anuncios {
+  display: flex;
+  text-align: center;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+.barra-anuncios h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+/*fin barra de anuncios*/
+/*header*/
+header {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+.logo {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.logos-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logos-header:hover {
+  cursor: pointer;
+}
+.btn-header {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 2px 5px;
+  box-shadow: 0px 1px 1px 2px black;
+  transition: box-shadow 0.3 ease;
+  transition: transform 0.3s ease;
+}
+.btn-header:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 4px 5px black;
+}
+.lucide {
+  color: black;
+}
+.btn-header a {
+  text-decoration: none;
+  color: black;
+}
+.btn-header svg {
+  color: black;
+}
+/*fin header*/
+/*Hero*/
+#hero {
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  height: 225px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.textos-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 38px;
+}
+.textos-hero h2 {
+  letter-spacing: 2px;
+  font-size: 34px;
+}
+.btn-hero {
+  padding: 18px 24px;
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 28px;
+  transition: transform 1s ease;
+}
+.btn-hero a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn-hero:hover {
+  cursor: pointer;
+  transform: scalex(1.1);
+}
+/*fin hero*/
+/*servicios*/
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+  margin-top: 15px;
+  height: 200px;
+}
+.caja {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  justify-content: center;
+}
+.caja svg{
+  width: 30px;
+  height: 30px;
+}
+/*fin servicios*/
+/*playeras*/
+#venta-playeras{
+  display: flex;
+}
+.texto-venta-playeras{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.playeras{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 20px;
+}
+.caja-playera{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caja-playera img{
+  width: 250px;
+  height: 250px;
+}
+.contenedor-3d{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  perspective: 1000px;
+}
+.contenedor-3d:hover{
+  transform: rotateY(180deg);
+}
+.imagen-frente, .imagen-reverso{
+  position: absolute;
+  backface-visibility: hidden;
+}
+.imagen-frente{
+  z-index: 2;
+}
+.imagen-reverso{
+  transform: rotateY(180deg);
+}
+.caja-playera button{
+  margin-top: 8px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px;
+  border: 0.5px solid rgb(173, 173, 173);
+  border-radius: 10px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+.caja-playera button:hover{
+  cursor: pointer;
+  transform: translateY(-1.5px);
+  box-shadow: 0px 2px 2px 1px black;
+}
+.caja-playera button a{
+  text-decoration: none;
+  color: black;
+}
+/*fin playeras*/
+/*footer*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 0px 100px;
+}
+footer h2{
+  font-size: 25px;
+}
+footer p{
+  margin-top: 5px;
+  font-size: 12px;
+}
+.seccion-1, .enlaces, .informacion, .fin{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer svg{
+  margin-top: 5px;
+}
+/*fin footer
