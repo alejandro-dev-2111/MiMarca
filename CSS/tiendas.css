@@ -133,7 +133,7 @@ header {
   align-items: start;
   justify-content: space-around;
   margin-top: 15px;
-  height: 200px;
+  height: auto;
 }
 .caja {
   margin-top: 20px;
@@ -144,36 +144,36 @@ header {
   gap: 8px;
   justify-content: center;
 }
-.caja svg{
+.caja svg {
   width: 30px;
   height: 30px;
 }
 /*fin servicios*/
 /*playeras*/
-#venta-playeras{
+#venta-playeras {
   display: flex;
 }
-.texto-venta-playeras{
+.texto-venta-playeras {
   margin-top: 50px;
   margin-left: 30px;
 }
-.playeras{
+.playeras {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px;
   gap: 20px;
 }
-.caja-playera{
+.caja-playera {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.caja-playera img{
+.caja-playera img {
   width: 250px;
   height: 250px;
 }
-.contenedor-3d{
+.contenedor-3d {
   position: relative;
   width: 250px;
   height: 250px;
@@ -181,20 +181,21 @@ header {
   transition: transform 0.8s ease;
   perspective: 1000px;
 }
-.contenedor-3d:hover{
+.contenedor-3d:hover {
   transform: rotateY(180deg);
 }
-.imagen-frente, .imagen-reverso{
+.imagen-frente,
+.imagen-reverso {
   position: absolute;
   backface-visibility: hidden;
 }
-.imagen-frente{
+.imagen-frente {
   z-index: 2;
 }
-.imagen-reverso{
+.imagen-reverso {
   transform: rotateY(180deg);
 }
-.caja-playera button{
+.caja-playera button {
   margin-top: 8px;
   width: 150px;
   display: flex;
@@ -206,18 +207,18 @@ header {
   border-radius: 10px;
   transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
-.caja-playera button:hover{
+.caja-playera button:hover {
   cursor: pointer;
   transform: translateY(-1.5px);
   box-shadow: 0px 2px 2px 1px black;
 }
-.caja-playera button a{
+.caja-playera button a {
   text-decoration: none;
   color: black;
 }
 /*fin playeras*/
 /*footer*/
-footer{
+footer {
   display: flex;
   justify-content: space-around;
   color: white;
@@ -226,18 +227,180 @@ footer{
   flex-wrap: wrap;
   padding: 0px 100px;
 }
-footer h2{
+footer h2 {
   font-size: 25px;
 }
-footer p{
+footer p {
   margin-top: 5px;
   font-size: 12px;
 }
-.seccion-1, .enlaces, .informacion, .fin{
+.seccion-1,
+.enlaces,
+.informacion,
+.fin {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-footer svg{
+footer svg {
   margin-top: 5px;
 }
-/*fin footer
+/*fin footer*/
+/*cta*/
+#cta {
+  display: flex;
+  background-color: black;
+}
+.imagen-cta {
+  margin-left: 25px;
+}
+.imagen-cta img {
+  width: 600px;
+}
+.texto-cta {
+  margin-left: 25px;
+  color: white;
+}
+.cajas-cta {
+  margin-top: 15px;
+  margin-left: 25px;
+  text-align: center;
+}
+.texto-cta h2 {
+  font-size: 15px;
+}
+.texto-cta {
+  font-size: 25px;
+}
+.cajas-cta p {
+  color: white;
+}
+.texto-cta h3 {
+  font-size: 30px;
+}
+.texto-cta h4 {
+  font-size: 18px;
+}
+.cajas-cta svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.anuncios-cta {
+  display: flex;
+  gap: 8px;
+}
+.contenido-cta {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+#cta button {
+  margin-left: 30px;
+  border-radius: 50%;
+  background-color: green;
+}
+/*fin cta*/
+/*responsive*/
+@media (max-width: 768px) {
+  /* Barra de anuncios */
+  .barra-anuncios h2 {
+    font-size: 11px;
+    padding: 0 10px;
+  }
+
+  /* Header */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    gap: 12px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .logos-header {
+    justify-content: center;
+  }
+
+  /* Hero */
+  #hero {
+    height: auto;
+    padding: 40px 24px;
+  }
+  .textos-hero h2 {
+    font-size: 24px;
+  }
+  .btn-hero a {
+    font-size: 16px;
+  }
+
+  /* Servicios */
+  #servicios {
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  /* Playeras */
+  #venta-playeras {
+    flex-direction: column;
+  }
+  .texto-venta-playeras {
+    margin: 20px 16px 0 16px;
+    text-align: center;
+  }
+  .playeras {
+    padding: 20px;
+    gap: 16px;
+  }
+  .contenedor-3d {
+    width: 160px;
+    height: 160px;
+  }
+  .caja-playera img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* CTA */
+  #cta {
+    flex-direction: column;
+  }
+  .imagen-cta {
+    margin: 0;
+  }
+  .imagen-cta img {
+    width: 100%;
+  }
+  .texto-cta {
+    margin: 20px 16px;
+  }
+  .cajas-cta {
+    margin: 16px;
+  }
+  .anuncios-cta {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #cta button {
+    margin: 16px auto;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .seccion-1,
+  .enlaces,
+  .informacion,
+  .fin {
+    margin: 16px 0;
+  }
+}
+/*fin responsive*/
