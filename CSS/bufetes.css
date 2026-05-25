@@ -1,0 +1,416 @@
+/*general*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*fin general*/
+/*header*/
+#header {
+  position: fixed;
+  padding: 30px;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.logo {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.lucide-scale {
+  color: rgb(151, 151, 30);
+}
+.texto-logo h2 {
+  font-size: 28px;
+}
+.texto-logo p {
+  font-size: 12px;
+  color: rgb(151, 151, 30);
+}
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+}
+.menu a:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+/*fin header*/
+/*hero*/
+#hero {
+  display: flex;
+  background: linear-gradient(black 50%, white);
+  position: relative;
+  height: 500px;
+  align-items: center;
+}
+.texto-hero {
+  margin-top: 25px;
+  flex-direction: column;
+  display: flex;
+  gap: 25px;
+  margin-left: 25px;
+}
+.texto-hero h2 {
+  font-size: 50px;
+  color: white;
+}
+.texto-hero p {
+  font-size: 20px;
+}
+.linea-hero {
+  border: 1px solid rgb(151, 151, 30);
+  height: 5px;
+  background-color: rgb(151, 151, 30);
+  width: 18%;
+}
+.texto-hero p {
+  color: white;
+}
+#hero img {
+  position: absolute;
+  width: 500px;
+  top: 0;
+  right: 75px;
+  margin-top: 75px;
+}
+.btn-hero {
+  background-color: rgb(151, 151, 30);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  transition: transform 0.8s;
+  gap: 8px;
+}
+.btn-hero:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: 0.6s;
+}
+/*fin hero*/
+/*abogados*/
+#abogados {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 18px;
+}
+.texto-abogados p {
+  font-size: 35px;
+  font-weight: 600;
+}
+.nuestros-abogados {
+  display: flex;
+  gap: 55px;
+}
+.lineas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.lineas-nuestrosabogados {
+  width: 100px;
+  border: none;
+  height: 2px;
+  background-color: rgb(151, 151, 30);
+}
+.abogado-1,
+.abogado-2 {
+  display: flex;
+  text-align: left;
+  gap: 25px;
+  justify-content: center;
+  background-color: rgb(244, 248, 252);
+  border-radius: 10px;
+  padding: 10px;
+}
+.pie-abogado {
+  display: flex;
+  gap: 8px;
+}
+.contenedor-texto-abogados {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+}
+.contenedor-texto-abogados h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.contenedor-texto-abogados h3 {
+  font-family: 25px;
+  color: rgb(151, 151, 30);
+}
+.linea-abogados {
+  width: 200px;
+  height: 2px;
+  background-color: rgb(151, 151, 30);
+  border: none;
+}
+.img-abogado1,
+.img-abogado2 {
+  border-radius: 10px;
+}
+.pie-abogado svg {
+  color: rgb(151, 151, 30);
+  fill: rgb(151, 151, 30);
+}
+li::marker {
+  color: rgb(151, 151, 30);
+}
+/*fin abogados*/
+/*areas*/
+#areas {
+  flex-wrap: wrap;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto-areas {
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.texto-areas h2 {
+  font-size: 37px;
+  gap: 8px;
+}
+.linea-cta {
+  border: none;
+  height: 2px;
+  background-color: rgb(151, 151, 30);
+  width: 125px;
+}
+.areas-practica {
+  margin-top: 50px;
+  justify-content: space-between;
+  display: flex;
+  gap: 28px;
+}
+.caja {
+  flex-wrap: wrap;
+  padding: 10px;
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+  text-align: left;
+  justify-content: start;
+  align-items: center;
+  border-right: 1px solid rgb(151, 151, 30);
+}
+.caja svg {
+  color: rgb(151, 151, 30);
+}
+/*fin areas*/
+/*footer*/
+footer {
+  flex-wrap: wrap;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.logo-footer {
+  display: flex;
+  gap: 15px;
+}
+.logo-footer svg {
+  color: rgb(151, 151, 30);
+  border-right: 1px solid rgb(151, 151, 30);
+}
+.texto-footer {
+  padding: 8px;
+  gap: 8px;
+}
+.contactos {
+  flex-direction: column;
+  border-left: 1px solid rgb(151, 151, 30);
+  padding: 5px;
+  gap: 16px;
+  display: flex;
+}
+.contactos p {
+  display: flex;
+  gap: 8px;
+}
+.contactos svg {
+  color: rgb(151, 151, 30);
+}
+.btn-footer {
+  display: flex;
+  background-color: rgb(151, 151, 30);
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  color: white;
+  gap: 8px;
+  height: 25px;
+  border-radius: 10px;
+}
+.btn-footer svg {
+  color: white;
+}
+.btn-footer:hover {
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/*fin footer*/
+/*responsive*/
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+    /* Header */
+    #header {
+      height: auto;
+      padding: 16px;
+      gap: 12px;
+    }
+    .menu {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    /* Hero */
+    #hero {
+      flex-direction: column;
+      height: auto;
+      padding: 100px 24px 40px 24px;
+      text-align: center;
+      align-items: center;
+    }
+    .texto-hero {
+      margin-top:70px;
+      margin-left: 0;
+      align-items: center;
+    }
+    .texto-hero h2 {
+      font-size: 32px;
+    }
+    .texto-hero p {
+      font-size: 16px;
+    }
+    #hero img {
+      position: relative;
+      width: 100%;
+      right: 0;
+      margin-top: 24px;
+    }
+    .btn-hero {
+      margin-left: 0;
+      width: 100%;
+    }
+    .linea-hero {
+      width: 60px;
+    }
+
+    /* Abogados */
+    #abogados {
+      padding: 24px 16px;
+    }
+    .nuestros-abogados {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .abogado-1,
+    .abogado-2 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .contenedor-texto-abogados {
+      align-items: center;
+      text-align: center;
+    }
+    .contenedor-texto-abogados h2 {
+      font-size: 22px;
+    }
+    .img-abogado1,
+    .img-abogado2 {
+      width: 100%;
+    }
+
+    /* Áreas */
+    #areas {
+      padding: 24px 16px;
+    }
+    .areas-practica {
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .caja {
+      border-right: none;
+      border-bottom: 1px solid rgb(151, 151, 30);
+      padding-bottom: 16px;
+      align-items: flex-start;
+    }
+    .texto-areas h2 {
+      font-size: 26px;
+    }
+
+    /* Footer */
+    footer {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+      padding: 24px 16px;
+    }
+    .logo-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-footer svg {
+      border-right: none;
+      border-bottom: 1px solid rgb(151, 151, 30);
+      padding-bottom: 8px;
+    }
+    .contactos {
+      border-left: none;
+      border-top: 1px solid rgb(151, 151, 30);
+      padding-top: 16px;
+      align-items: center;
+    }
+    .btn-footer {
+      width: 100%;
+    }
+  }
+}
+/*fin responsive*/

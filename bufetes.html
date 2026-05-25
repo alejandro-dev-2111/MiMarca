@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUFETES</title>
+    <link rel="stylesheet" href="CSS/bufetes.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="IMAGES/icons8-desarrollo-backend-48.apng.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="45"
+          height="45"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-scale-icon lucide-scale"
+        >
+          <path d="M12 3v18" />
+          <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+          <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+          <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+          <path d="M7 21h10" />
+        </svg>
+        <div class="texto-logo">
+          <h2>BUFETE LEGAL</h2>
+          <p>ABOGADOS ASOCIADOS</p>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="#"><span style="color: rgb(151, 151, 30)">INICIO</span></a>
+        <a href="#">NOSOTROS</a>
+        <a href="#">AREAS DE PRACTICA</a>
+        <a href="#">CONTACTO</a>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="texto-hero btn">
+        <h2>
+          Defendemos tus derechos, <br />
+          <span style="color: rgb(151, 151, 30)">protegemos tu futuro.</span>
+        </h2>
+        <hr class="linea-hero" />
+        <p>
+          Asesoría legal personalizada, ética y efectiva <br />
+          para cada etapa de tu vida.
+        </p>
+        <button class="btn-hero">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="35"
+            height="50"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#fff"
+              d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
+            ></path>
+            <path
+              fill="#cfd8dc"
+              d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
+            ></path>
+            <path
+              fill="#40c351"
+              d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+            ></path>
+            <path
+              fill="#fff"
+              fill-rule="evenodd"
+              d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          CONTÁCTANOS
+        </button>
+      </div>
+      <img src="IMAGES/JUSTICE.png" alt="Justicia" />
+    </section>
+    <section id="abogados">
+      <div class="texto-abogados">
+        <p>Nuestros Abogados</p>
+      </div>
+      <div class="lineas">
+        <hr class="lineas-nuestrosabogados" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="45"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-scale-icon lucide-scale"
+        >
+          <path d="M12 3v18" />
+          <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+          <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+          <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+          <path d="M7 21h10" />
+        </svg>
+        <hr class="lineas-nuestrosabogados" />
+      </div>
+      <div class="nuestros-abogados">
+        <div class="abogado-1">
+          <div class="contenedor-img-abogado">
+            <img
+              src="IMAGES/abogado 1.jpg"
+              alt="abogado"
+              class="img-abogado1"
+              width="200px"
+            />
+          </div>
+          <div class="contenedor-texto-abogados">
+            <h2>Lic. Rodrigo Mendez</h2>
+            <h3>Abogado</h3>
+            <hr class="linea-abogados" />
+            <p>Especialidades:</p>
+            <ul>
+              <li>Derecho Civil</li>
+              <li>Derecho Mercantil</li>
+              <li>Contratos</li>
+              <li>Asesoria Empresarial</li>
+            </ul>
+            <div class="pie-abogado">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
+              <h4>Universidad de San Carlos <br />de Guatemala</h4>
+            </div>
+          </div>
+        </div>
+        <div class="abogado-2">
+          <img
+            src="IMAGES/abogado 2.jpg"
+            alt="abogado"
+            class="img-abogado2"
+            width="220.5px"
+            height="301px"
+          />
+          <div class="contenedor-texto-abogados">
+            <h2>Lic. Carlos Hernandez</h2>
+            <h3>Abogado</h3>
+            <hr class="linea-abogados" />
+            <p>Especialidades:</p>
+            <ul>
+              <li>Derecho Laboral</li>
+              <li>Derecho de Familia</li>
+              <li>Derecho Penal</li>
+              <li>Amparo</li>
+            </ul>
+            <div class="pie-abogado">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
+              <h4>
+                Universidad de San Carlos <br />
+                de Guatemala
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="areas">
+      <div class="texto-areas">
+        <h2>Áreas de Práctica</h2>
+        <hr class="linea-cta" />
+      </div>
+      <div class="areas-practica">
+        <div class="caja">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 3v18" />
+            <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+            <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+            <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+            <path d="M7 21h10" />
+          </svg>
+          <h2>Derecho Civil</h2>
+          <p>
+            Asesoriía y representación <br />
+            en conflictos civiles y <br />
+            contratos.
+          </p>
+        </div>
+        <div class="caja">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-briefcase-business-icon lucide-briefcase-business"
+          >
+            <path d="M12 12h.01" />
+            <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+            <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+            <rect width="20" height="14" x="2" y="6" rx="2" />
+          </svg>
+          <h2>Derecho Mercantil</h2>
+          <p>
+            Soluciones legales para <br />
+            empresas y comerciantes.
+          </p>
+        </div>
+        <div class="caja">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-round-icon lucide-user-round"
+          >
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+          </svg>
+          <h2>Derecho Laboral</h2>
+          <p>
+            Defensa de derechos <br />
+            laborales para trabajadores <br />
+            y empresas.
+          </p>
+        </div>
+        <div class="caja">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-gavel-icon lucide-gavel"
+          >
+            <path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381" />
+            <path d="m16 16 6-6" />
+            <path d="m21.5 10.5-8-8" />
+            <path d="m8 8 6-6" />
+            <path d="m8.5 7.5 8 8" />
+          </svg>
+          <h2>Derecho de Familia</h2>
+          <p>
+            Asesoría en divorcios pensiones, <br />
+            custodia y más.
+          </p>
+        </div>
+        <div class="caja">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-icon lucide-shield"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+          </svg>
+          <h2>Derecho Penal</h2>
+          <p>
+            Defensa legal en procesos <br />
+            penales y amparos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="logo-footer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="150"
+          height="150"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 3v18" />
+          <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+          <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+          <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+          <path d="M7 21h10" />
+        </svg>
+        <div class="texto-footer">
+          <h2>Tu tranqulidad es nuestra prioridad</h2>
+          <p>Estamos listos para escucharte y ayudarte</p>
+          <button class="btn-footer">
+            AGENDAR CITA
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-calendar-days-icon lucide-calendar-days"
+            >
+              <path d="M8 2v4" />
+              <path d="M16 2v4" />
+              <rect width="18" height="18" x="3" y="4" rx="2" />
+              <path d="M3 10h18" />
+              <path d="M8 14h.01" />
+              <path d="M12 14h.01" />
+              <path d="M16 14h.01" />
+              <path d="M8 18h.01" />
+              <path d="M12 18h.01" />
+              <path d="M16 18h.01" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="contactos">
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-phone-icon lucide-phone"
+          >
+            <path
+              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+            />
+          </svg>
+          +502 1234 5678
+        </p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <title xmlns="">whatsapp-fill</title>
+            <g fill="none">
+              <g clip-path="url(#SVGXv8lpc2Y)">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967s-.47-.148-.669.15c-.198.297-.767.966-.94 1.164c-.174.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.019-.458.13-.606c.134-.133.297-.347.446-.52s.198-.298.297-.497c.1-.198.05-.371-.025-.52c-.074-.149-.668-1.612-.916-2.207c-.241-.579-.486-.5-.668-.51c-.174-.008-.372-.01-.57-.01s-.52.074-.792.372c-.273.297-1.04 1.016-1.04 2.479c0 1.462 1.064 2.875 1.213 3.074s2.095 3.2 5.076 4.487c.71.306 1.263.489 1.694.625c.712.227 1.36.195 1.872.118c.57-.085 1.758-.719 2.006-1.413s.247-1.289.173-1.413s-.272-.198-.57-.347m-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214l-3.742.982l.999-3.648l-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.8 9.8 0 0 1 6.988 2.899a9.82 9.82 0 0 1 2.892 6.992c-.002 5.45-4.436 9.885-9.884 9.885m8.412-18.297A11.82 11.82 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.86 11.86 0 0 0 1.587 5.945L0 24l6.304-1.654a11.9 11.9 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.82 11.82 0 0 0-3.48-8.413"
+                  clip-rule="evenodd"
+                />
+              </g>
+              <defs>
+                <clipPath id="SVGXv8lpc2Y">
+                  <path fill="#fff" d="M0 0h24v24H0z" />
+                </clipPath>
+              </defs>
+            </g>
+          </svg>
+          +502 1234 5678
+        </p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-mail-icon lucide-mail"
+          >
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+          </svg>
+          infor@bufetelegal.com
+        </p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-map-pin-icon lucide-map-pin"
+          >
+            <path
+              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+            />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          tu-direccion-aqui, Guatemala
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
