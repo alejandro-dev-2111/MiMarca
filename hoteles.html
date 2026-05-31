@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoteles</title>
+    <link rel="stylesheet" href="css/hoteles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="IMAGES/icons8-desarrollo-backend-48.apng.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-crown-icon lucide-crown"
+        >
+          <path
+            d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"
+          />
+          <path d="M5 21h14" />
+        </svg>
+        <h2>LUXORA</h2>
+        <p>HOTEL</p>
+      </div>
+      <nav class="menu">
+        <a href="#">Inicio</a><a href="#">Habitaciones</a
+        ><a href="#">Servicios</a><a href="#">Sobre nosotros</a
+        ><a href="#">Contacto</a>
+      </nav>
+      <button class="boton-header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-mail-icon lucide-mail"
+        >
+          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+        </svg>
+        Solicitar reserva
+      </button>
+    </header>
+    <section id="hero">
+      <div class="contenido-hero">
+        <div class="hero-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-star-icon lucide-star"
+          >
+            <path
+              d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+            />
+          </svg>
+          <h2>Descanso que mereces</h2>
+        </div>
+        <h3>
+          Tu estancia, <br />
+          tu mejor <span>experiencia.</span>
+        </h3>
+        <p>
+          Disfruta de comodidad, elegancia y un servicio <br />
+          pensado para ti
+        </p>
+        <div class="cajas">
+          <div class="caja">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bed-double-icon lucide-bed-double"
+            >
+              <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
+              <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
+              <path d="M12 4v6" />
+              <path d="M2 18h20" />
+            </svg>
+            <p>
+              Habitaciones <br />
+              Cómodas
+            </p>
+          </div>
+          <div class="caja">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-wifi-icon lucide-wifi"
+            >
+              <path d="M12 20h.01" />
+              <path d="M2 8.82a15 15 0 0 1 20 0" />
+              <path d="M5 12.859a10 10 0 0 1 14 0" />
+              <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+            </svg>
+            <p>
+              Wi-fi <br />
+              Gratuito
+            </p>
+          </div>
+          <div class="caja">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-coffee-icon lucide-coffee"
+            >
+              <path d="M10 2v2" />
+              <path d="M14 2v2" />
+              <path
+                d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
+              />
+              <path d="M6 2v2" />
+            </svg>
+            <p>
+              Desayuno <br />
+              Incluido
+            </p>
+          </div>
+        </div>
+      </div>
+      <form action="">
+        <div class="encabezado-form">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="38"
+            height="38"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-calendar-days-icon lucide-calendar-days"
+          >
+            <path d="M8 2v4" />
+            <path d="M16 2v4" />
+            <rect width="18" height="18" x="3" y="4" rx="2" />
+            <path d="M3 10h18" />
+            <path d="M8 14h.01" />
+            <path d="M12 14h.01" />
+            <path d="M16 14h.01" />
+            <path d="M8 18h.01" />
+            <path d="M12 18h.01" />
+            <path d="M16 18h.01" />
+          </svg>
+          <h2>Solicita tu reserva</h2>
+        </div>
+        <div class="doble-entrada">
+          <div class="campo">
+            <label>Fecha de llegada*</label>
+            <input type="date" placeholder="dd / mm / aaaa" required />
+          </div>
+          <div class="campo">
+            <label>Fecha de salida*</label>
+            <input type="date" placeholder="dd / mm / aaaa" required />
+          </div>
+        </div>
+        <div class="doble-entrada">
+          <div class="campo">
+            <label>Personas*</label>
+            <select required>
+              <option value="" disabled selected>Ej. 2</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label>Habitaciones*</label>
+            <select required>
+              <option value="" disabled selected>Ej. 1</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="">Nombre completo*</label>
+          <input type="text" name="" id="" placeholder="Tu nombre" required />
+        </div>
+        <div class="campo">
+          <label for="">Correo electrónico (opcional)</label>
+          <input type="email" name="" id="" placeholder="tu@email.com" />
+        </div>
+        <div class="campo">
+          <label for="">Teléfono*</label>
+          <input
+            type="number"
+            name=""
+            id=""
+            placeholder="EJ. +54 9 111 2345"
+            required
+          />
+        </div>
+        <div class="campo">
+          <label for="">Comentarios (opcional)</label>
+          <textarea
+            name=""
+            id=""
+            placeholder="Alguna petición (opcional)..."
+          ></textarea>
+        </div>
+        <button class="boton-hero">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-send-icon lucide-send"
+          >
+            <path
+              d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+            />
+            <path d="m21.854 2.147-10.94 10.939" />
+          </svg>
+          Enviar solicitud
+        </button>
+        <p class="texto-form">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-icon lucide-shield"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4
+               18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+          </svg>
+          Tu solicitud será enviada al hotel.
+        </p>
+      </form>
+    </section>
+    <section id="comodidades">
+      <div class="texto-comodidades">
+        <h2>¿Por qué elegirnos?</h2>
+        <hr class="linea-comodidades" />
+        <p>Todo pensado para tu comodidad</p>
+      </div>
+      <div class="cajas-comodidades">
+        <div class="caja-comodidades">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-concierge-bell-icon lucide-concierge-bell"
+          >
+            <path
+              d="M3 20a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1Z"
+            />
+            <path d="M20 16a8 8 0 1 0-16 0" />
+            <path d="M12 4v4" />
+            <path d="M10 4h4" />
+          </svg>
+          <h2>Atención 24/7</h2>
+          <p>
+            Nuestro equipo siempre <br />
+            disponible para ayudarte.
+          </p>
+        </div>
+        <div class="caja-comodidades">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-utensils-icon lucide-utensils"
+          >
+            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+            <path d="M7 2v20" />
+            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+          </svg>
+          <h2>Desayuno inluido</h2>
+          <p>
+            Empieza tu día con un <br />
+            desayuno delicioso.
+          </p>
+        </div>
+        <div class="caja-comodidades">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-waves-horizontal-icon lucide-waves-horizontal"
+          >
+            <path d="M2 12q2.5 2 5 0t5 0 5 0 5 0" />
+            <path d="M2 19q2.5 2 5 0t5 0 5 0 5 0" />
+            <path d="M2 5q2.5 2 5 0t5 0 5 0 5 0" />
+          </svg>
+          <h2>Piscina climatizada</h2>
+          <p>
+            Relájate en nuestra piscina <br />
+            con vista al mar.
+          </p>
+        </div>
+        <div class="caja-comodidades">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-parking-icon lucide-circle-parking"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9 17V7h4a3 3 0 0 1 0 6H9" />
+          </svg>
+          <h2>Estacionamiento</h2>
+          <p>
+            Estacionamiento privado <br />
+            sin costo adicional.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="habitaciones">
+      <div class="texto-habitaciones">
+        <h2>Nuestras habitaciones</h2>
+        <hr class="linea-comodidades" />
+      </div>
+      <div class="todas-las-habitaciones">
+        <div class="habitacion">
+          <div class="contenedor-imagen">
+            <img src="IMAGES/room-1.jpg" alt="habitacion" />
+            <div class="texto-encima">Desde Q180.00/noche</div>
+          </div>
+          <div class="texto-habitacion">
+            <h2>Habtitación Estándar</h2>
+            <h3>Cómoda y acogedora, ideal para 2 personas.</h3>
+            <div class="logos-habitaciones">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-icon lucide-user"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <p>2 personas</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bed-icon lucide-bed"
+              >
+                <path d="M2 4v16" />
+                <path d="M2 8h18a2 2 0 0 1 2 2v10" />
+                <path d="M2 17h20" />
+                <path d="M6 8v9" />
+              </svg>
+              <p>1 cama</p>
+            </div>
+          </div>
+        </div>
+        <div class="habitacion">
+          <div class="contenedor-imagen">
+            <img src="IMAGES/room-2.jpg" alt="habitacion" />
+            <div class="texto-encima">Desde Q280.00/noche</div>
+          </div>
+          <div class="texto-habitacion">
+            <h2>Habtitación Deluxe</h2>
+            <h3>Más espacio, balc+on y vista al mar.</h3>
+            <div class="logos-habitaciones">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-icon lucide-user"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <p>2-4 personas</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bed-icon lucide-bed"
+              >
+                <path d="M2 4v16" />
+                <path d="M2 8h18a2 2 0 0 1 2 2v10" />
+                <path d="M2 17h20" />
+                <path d="M6 8v9" />
+              </svg>
+              <p>1 cama king</p>
+            </div>
+          </div>
+        </div>
+        <div class="habitacion">
+          <div class="contenedor-imagen">
+            <img src="IMAGES/room-1.jpg" alt="habitacion" />
+            <div class="texto-encima">Desde Q380.00/noche</div>
+          </div>
+          <div class="texto-habitacion">
+            <h2>Suite Familiar</h2>
+            <h3>Perfecta para familias que buscan confort.</h3>
+            <div class="logos-habitaciones">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-icon lucide-user"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <p>4-6 personas</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bed-icon lucide-bed"
+              >
+                <path d="M2 4v16" />
+                <path d="M2 8h18a2 2 0 0 1 2 2v10" />
+                <path d="M2 17h20" />
+                <path d="M6 8v9" />
+              </svg>
+              <p>2 camas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta">
+      <div class="contenido-cta">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-tree-palm-icon lucide-tree-palm"
+        >
+          <path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4" />
+          <path
+            d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"
+          />
+          <path
+            d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"
+          />
+          <path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14" />
+        </svg>
+        <div class="texto-cta">
+          <h2>¿Listo para vivir una experiencia única?</h2>
+          <p>COmpleta el formulario y nuestro equipo te contactará</p>
+        </div>
+        <button class="btn-cta">
+          Solicitar reserva
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            class="arrow"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
