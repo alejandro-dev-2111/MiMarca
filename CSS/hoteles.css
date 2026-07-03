@@ -240,13 +240,13 @@ textarea {
 /*fin form*/
 /*fin hero*/
 /*comodidades*/
-#comodidades{
+#comodidades {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.texto-comodidades{
+.texto-comodidades {
   margin-top: 15px;
   display: flex;
   justify-content: center;
@@ -254,28 +254,28 @@ textarea {
   flex-direction: column;
   gap: 16px;
 }
-.texto-comodidades h2{
+.texto-comodidades h2 {
   font-size: 20px;
   font-weight: 400;
 }
-.texto-comodidades p{
+.texto-comodidades p {
   font-size: 30px;
   font-weight: 700;
 }
-.linea-comodidades{
+.linea-comodidades {
   border: none;
   height: 5px;
   width: 70px;
   background-color: rgb(187, 187, 0);
 }
-.cajas-comodidades{
+.cajas-comodidades {
   margin-top: 20px;
   display: flex;
   align-items: center;
   padding: 20px;
   gap: 50px;
 }
-.caja-comodidades{
+.caja-comodidades {
   display: flex;
   width: 275px;
   height: 150px;
@@ -287,10 +287,10 @@ textarea {
   gap: 6px;
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.caja-comodidades h2{
+.caja-comodidades h2 {
   font-size: 16px;
 }
-.caja-comodidades svg{
+.caja-comodidades svg {
   width: 40px;
   height: 40px;
   background-color: rgb(255, 222, 166);
@@ -299,7 +299,7 @@ textarea {
 }
 /*fin comodidades*/
 /*Habitaciones*/
-#habitaciones{
+#habitaciones {
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -308,56 +308,56 @@ textarea {
   display: flex;
   justify-content: space-around;
 }
-.texto-habitaciones{
+.texto-habitaciones {
   margin-top: 40px;
   text-align: left;
   margin-bottom: 20px;
 }
-.contenedor-imagen{
+.contenedor-imagen {
   position: relative;
   display: inline-block;
   text-align: center;
 }
-.habitacion{
+.habitacion {
   box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px 10px 5px 5px;
 }
-.contenedor-imagen img{
+.contenedor-imagen img {
   width: 400px;
   height: auto;
   border-radius: 10px 10px 0px 0px;
 }
-.texto-encima{
+.texto-encima {
   position: absolute;
-  top: 10px;           
-  right: 10px;          
-  color: white;      
-  background-color: rgba(0, 0, 0, 0.5); 
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 4px 8px;
   border-radius: 20px;
   font-size: 13px;
 }
-.texto-habitacion h2{
+.texto-habitacion h2 {
   font-size: 20px;
 }
-.texto-habitacion{
+.texto-habitacion {
   padding: 5px;
   gap: 10px;
 }
-.texto-habitacion h3{
+.texto-habitacion h3 {
   font-size: 15px;
   font-weight: 300;
 }
-.logos-habitaciones{
+.logos-habitaciones {
   display: flex;
   gap: 19px;
 }
 /*fin habitaciones*/
 /*cta*/
-#cta{
+#cta {
   padding: 75px;
 }
-.contenido-cta{
+.contenido-cta {
   display: flex;
   background-color: rgb(0, 0, 44);
   padding: 20px;
@@ -365,18 +365,18 @@ textarea {
   align-items: center;
   justify-content: space-around;
 }
-.lucide-tree-palm{
+.lucide-tree-palm {
   width: 40px;
   height: 40px;
   color: rgb(255, 197, 91);
 }
-.contenido-cta h2{
+.contenido-cta h2 {
   color: white;
 }
-.contenido-cta p{
+.contenido-cta p {
   color: white;
 }
-.btn-cta{
+.btn-cta {
   background-color: orange;
   align-items: center;
   display: flex;
@@ -386,15 +386,18 @@ textarea {
   justify-content: center;
   gap: 8px;
 }
-.btn-cta:hover{
+.btn-cta:hover {
   cursor: pointer;
 }
-.arrow{
+.arrow {
   color: black;
 }
 /*fin cta*/
 /*responsive*/
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     position: relative;
     flex-wrap: wrap;
@@ -423,9 +426,7 @@ textarea {
   }
   .hero-1 h2 {
     font-size: 20px;
-    gap: 1px;
-    justify-content: left;
-    align-items: left;
+    text-align: left;
   }
   .boton-header {
     display: flex;
@@ -438,7 +439,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 1px;
-    align-items: left;
+    align-items: flex-start;
     padding: 5px;
   }
   form {
@@ -466,37 +467,37 @@ textarea {
   .caja {
     flex: 1;
   }
-  .texto-comodidades{
+  .texto-comodidades {
     text-align: center;
     align-items: center;
     justify-content: center;
   }
-  .cajas-comodidades{
+  .cajas-comodidades {
     display: grid;
   }
-  .texto-comodidades h2{
+  .texto-comodidades h2 {
     margin-top: 40px;
     font-size: 16px;
   }
-  .texto-comodidades p{
+  .texto-comodidades p {
     font-size: 20px;
   }
-  .todas-las-habitaciones{
+  .todas-las-habitaciones {
     display: grid;
     align-items: center;
     gap: 16px;
     justify-content: center;
   }
-  .cta{
+  .cta {
     padding: 1px;
   }
-  .contenido-cta{
+  .contenido-cta {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
   }
-  .btn-cta{
+  .btn-cta {
     width: 150px;
   }
 }
